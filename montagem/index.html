@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montador de Móveis No Rio de Janeiro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="jumbotron text-center text-white">
+            <h1 class="display-4">Montagem de Móveis Profissional</h1>
+            <p class="lead">Qualidade, Pontualidade e Satisfação Garantida</p>
+            <a href="https://wa.me/5521987621734" class="btn btn-success btn-lg">
+                <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+            </a>
+
+        </div>
+    </header>
+
+    
+    <main class="container mt-4">
+        
+        <section id="servicos" class="mt-5">
+            <h2>Serviços</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Montagem e desmontagem de móveis</li>
+                <li class="list-group-item">Instalação de prateleiras</li>
+                <li class="list-group-item">Consertos em geral</li>
+                <!-- Adicione mais serviços conforme necessário -->
+            </ul>
+        </section>
+        
+        <section id="portfolio" class="mt-5">
+            <h2></h2>
+            <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/armario_2.jpg" class="d-block w-100" alt="Projeto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/armario_3.jpg" class="d-block w-100" alt="Projeto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/armario_4.jpg" class="d-block w-100" alt="Projeto 3">
+                    </div>
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+                <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>Telefone: (21) 98762-1734</p>
+            <p>Campo grande, Rio de Janeiro</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Bootstrap form validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>

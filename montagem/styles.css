@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .jumbotron {
+    background-color: #343a40 ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+header .btn-lg {
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+.carousel-inner{
+        max-width: 30%;
+        height: auto;
+    }
+
+.carousel-control-prev{
+    width: 5%;
+}
+.carousel-control-next{
+    left: 25%; /* Ajuste para telas maiores */
+    width: 5%;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .carousel-control-next {
+        left: 25%; /* Ajuste conforme necessário */
+        width: 5%;
+    }
+    .carousel-inner{
+        max-width: 40%;
+        height: auto;
+    }
+}
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 576px) {
+    .carousel-control-next {
+        left: 70%; /* Ajuste conforme necessário */
+        width: 5%;
+    }
+    .carousel-inner{
+        max-width: 75%;
+        height: auto;
+       
+    }
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    header .jumbotron {
+        padding: 50px 20px;
+    }
+
+    nav .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    footer .container {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    header .jumbotron {
+        padding: 30px 20px;
+    }
+
+    header .display-4 {
+        font-size: 1.8rem;
+    }
+
+    header .lead {
+        font-size: 1.2rem;
+    }
+
+    nav .navbar-nav {
+        text-align: center;
+    }
+}
